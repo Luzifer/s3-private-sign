@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "S3 Console Private Signature Generator",
+  "description": "Generates a private signed URL in S3 console for private files",
+  "version": "0.1.0",
+
+  "options_page": "options.html",
+
+  "icons" : {
+    "256": "icon256.png"
+  },
+
+  "permissions": [
+    "https://*.console.aws.amazon.com/*",
+    "storage"
+  ],
+  
+  "web_accessible_resources": [
+    "jquery.min.map",
+    "hmac-sha1.map",
+    "enc-base64-min.map",
+    "application.map"
+  ],
+
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": ["https://*.console.aws.amazon.com/*"],
+      "js": ["jquery.min.js", "hmac-sha1.js", "enc-base64-min.js", "application.js"]
+    }
+  ]
+}
