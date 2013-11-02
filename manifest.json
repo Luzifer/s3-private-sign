@@ -3,7 +3,7 @@
 
   "name": "S3 Console Private Signature Generator",
   "description": "Generates a private signed URL in S3 console for private files",
-  "version": "0.1.1",
+  "version": "0.1.2",
 
   "options_page": "options.html",
 

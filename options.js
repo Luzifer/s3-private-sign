@@ -3,7 +3,7 @@
   var delayed, loadOptions, saveOptions;
 
   $(function() {
-    loadOoptions();
+    loadOptions();
     return $('#save').bind('click', saveOptions);
   });
 

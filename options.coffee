@@ -1,5 +1,5 @@
 $ ->
-  loadOoptions()
+  loadOptions()
   $('#save').bind 'click', saveOptions
 
 delayed = (time, fkt) ->
