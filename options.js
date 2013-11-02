@@ -3,8 +3,7 @@
   var delayed, loadOptions, saveOptions;
 
   $(function() {
-    $('#access_key').val(localStorage['AWSAccessKey']);
-    $('#secret_key').val(localStorage['AWSAccessSecret']);
+    loadOoptions();
     return $('#save').bind('click', saveOptions);
   });
 

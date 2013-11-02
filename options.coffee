@@ -1,7 +1,5 @@
 $ ->
-  $('#access_key').val localStorage['AWSAccessKey']
-  $('#secret_key').val localStorage['AWSAccessSecret']
-
+  loadOoptions()
   $('#save').bind 'click', saveOptions
 
 delayed = (time, fkt) ->
